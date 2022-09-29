@@ -62,42 +62,58 @@
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
                     <button class="button-close" data-modal-close>
-                        <img src="./images/close.svg" alt="button close">
+                        <svg class="close-icon" width="20px" height="20px">
+                            <use href="./images/sprite.svg#icon-close"></use>
+                        </svg>
+                        <!-- <img src="./images/close.svg" alt="button close"> -->
                     </button>
                     <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
                     <form class="modal-form" autocomplete="off">
                         <label class="modal-form-field">
-                            <input type="text" class="modal-form-input" name="name" placeholder=" ">
+                            <input type="text" class="modal-form-input" name="feedback" placeholder=" ">
                             <span class="modal-form-label">Ім'я</span>
-                            <span class="modal-form-icon"></span>
+                            <span class="modal-form-icon">
+                                <svg class="input-icon" width="18px" height="18px">
+                                    <use href="./images/sprite.svg#icon-person"></use>
+                                </svg>
+                            </span>
                         </label>
-
+                        
                         <label class="modal-form-field">
-                            <input type="tel" class="modal-form-input" name="phone-number" placeholder=" ">
+                            <input type="tel" class="modal-form-input" name="feedback" placeholder=" ">
                             <span class="modal-form-label">Телефон</span>
-                            <span class="modal-form-icon"></span>
+                            <span class="modal-form-icon">
+                                <svg class="input-icon" width="18px" height="18px">
+                                    <use href="./images/sprite.svg#icon-cellphone"></use>
+                                </svg>
+                            </span>
                         </label>
 
                         <label class="modal-form-field">
-                            <input type="email" class="modal-form-input" name="e-mail" placeholder=" ">
+                            <input type="email" class="modal-form-input" name="feedback" placeholder=" ">
                             <span class="modal-form-label">Пошта</span>
-                            <span class="modal-form-icon"></span>
+                            <span class="modal-form-icon">
+                                <svg class="input-icon" width="18px" height="18px">
+                                    <use href="./images/sprite.svg#icon-envelope"></use>
+                                </svg>
+                            </span>
                         </label>
 
-                        <!-- <label class="modal-form-field">
-                            <textarea class="modal-form-comment" name="comment" placeholder="Введіть текст"></textarea>
+                        <label class="modal-form-field">
+                            <textarea class="modal-form-comment" name="feedback" placeholder="Введіть текст"></textarea>
                             <span class="modal-form-label">Коментар</span>
-                        </label> -->
+                        </label>
 
-                        <!-- <textarea name="comment" placeholder="Введіть текст"></textarea> -->
+                        <label class="checkbox">
+                            <input type="checkbox" class="checkbox-input" name="feedback" value="policy">
+                            <svg class="check-icon" width="15px" height="15px">
+                                <use href="./images/sprite.svg#icon-icon-check"></use>
+                            </svg>
+                            <span class="checkbox-icon"></span>
+                            <span class="checkbox-label">Погоджуюся з розсилкою та приймаю <a class="checkbox-link link" href=" ">Умови договору</a></span>
+                        </label>
 
-                        <!-- <label class="modal-form-field">
-                            <input type="checkbox" class="modal-form-input" name="policy">
-                            <span class="modal-form-label">Погоджуюся з розсилкою та приймаю <a href=" ">Умови договору</a></span>
-                            <span class="modal-form-icon"></span>
-                        </label> -->
-
-                        <button type="submit" class="button">Відправити</button>
+                        <button type="submit" class="checkbox-btn button">Відправити</button>
                     </form>
                 </div>
             </div>
